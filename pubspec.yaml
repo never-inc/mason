@@ -1,0 +1,6 @@
+name: mason
+description: A sample command-line application.
+version: 1.0.0
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
