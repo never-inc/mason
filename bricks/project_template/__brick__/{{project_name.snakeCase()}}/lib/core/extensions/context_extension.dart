@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../res/gen/colors.gen.dart';
-
 extension ContextExtension on BuildContext {
   /// MediaQuery
   bool get isDark => MediaQuery.platformBrightnessOf(this) == Brightness.dark;
@@ -12,7 +10,7 @@ extension ContextExtension on BuildContext {
       deviceWidth == 320 && deviceHeight == 568; // iPhone SE 1st
   bool get isTablet =>
       MediaQuery.sizeOf(this).shortestSide >=
-      600; // https://stackoverflow.com/a/54136738
+          600; // https://stackoverflow.com/a/54136738
   double get appBarHeight => MediaQuery.paddingOf(this).top + kToolbarHeight;
   Orientation get orientation => MediaQuery.orientationOf(this);
 
@@ -39,12 +37,12 @@ extension ContextExtension on BuildContext {
   }
 
   void showSnackBar(
-    String text, {
-    Color backgroundColor = ColorName.primary,
-    Duration duration = const Duration(milliseconds: 1500),
-    VoidCallback? onTap,
-    String closeLabel = '閉じる',
-  }) {
+      String text, {
+        Color? backgroundColor,
+        Duration duration = const Duration(milliseconds: 1500),
+        VoidCallback? onTap,
+        String closeLabel = '閉じる',
+      }) {
     ScaffoldMessenger.of(this).showSnackBar(
       SnackBar(
         backgroundColor: backgroundColor,
