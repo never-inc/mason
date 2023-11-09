@@ -6,6 +6,10 @@ run_build_runner:
 watch_build_runner:
 	dart run build_runner watch
 
+# packageを取り込む
+pub_get:
+	flutter pub get
+
 # アイコンを作成
 create_icon:
 	flutter pub run flutter_launcher_icons:main
@@ -29,6 +33,10 @@ release_build_obfuscate_ios:
 # Masonのbrickを取得する
 mason_get:
 	mason get
+
+# Masonのbricksのアップグレードする
+mason_upgrade:
+	mason upgrade
 
 # Masonで新しいfeatureディレクトリを作成する
 mason_make_feature:

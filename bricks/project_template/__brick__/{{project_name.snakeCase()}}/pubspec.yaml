@@ -78,5 +78,8 @@ dev_dependencies:
   freezed:
   riverpod_generator:
 
+  # Other
+  flutter_launcher_icons:
+
 flutter:
   uses-material-design: true
