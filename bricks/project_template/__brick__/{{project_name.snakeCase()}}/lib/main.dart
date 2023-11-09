@@ -7,7 +7,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'app.dart';
 import 'core/repositories/package_info/package_info_repository.dart';
 import 'core/repositories/shared_preferences/shared_preference_repository.dart';
-import 'core/utils/flavor.dart';
 import 'core/utils/logger.dart';
 
 Future<void> main() async {
@@ -28,8 +27,6 @@ Future<void> main() async {
     sharedPreferences = await SharedPreferences.getInstance();
   }),
   ).wait;
-
-  logger.info(Flavor.environment);
 
   runApp(
     ProviderScope(

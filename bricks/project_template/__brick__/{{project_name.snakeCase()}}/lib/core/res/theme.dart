@@ -1,13 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import './gen/colors.gen.dart';
-
 /// Migrating a Flutter app to Material 3
 /// https://blog.codemagic.io/migrating-a-flutter-app-to-material-3/
 
 ThemeData getAppTheme() {
-  const primaryColor = ColorName.primary;
+  const primaryColor = Colors.blue;
 
   final base = ThemeData(
     useMaterial3: true,
@@ -51,7 +49,7 @@ ThemeData getAppTheme() {
     pageTransitionsTheme: const PageTransitionsTheme(
       builders: {
         TargetPlatform.android:
-            CupertinoPageTransitionsBuilder(), // AndroidもCupertinoPageTransitionsBuilderに設定する
+        CupertinoPageTransitionsBuilder(), // AndroidもCupertinoPageTransitionsBuilderに設定する
         TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
         TargetPlatform.linux: FadeUpwardsPageTransitionsBuilder(),
         TargetPlatform.macOS: CupertinoPageTransitionsBuilder(),
@@ -62,7 +60,7 @@ ThemeData getAppTheme() {
 }
 
 ThemeData getAppThemeDark() {
-  const primaryColor = ColorName.primary;
+  const primaryColor = Colors.blue;
 
   final base = ThemeData(
     useMaterial3: true,
@@ -105,7 +103,7 @@ ThemeData getAppThemeDark() {
     pageTransitionsTheme: const PageTransitionsTheme(
       builders: {
         TargetPlatform.android:
-            CupertinoPageTransitionsBuilder(), // AndroidもCupertinoPageTransitionsBuilderに設定する
+        CupertinoPageTransitionsBuilder(), // AndroidもCupertinoPageTransitionsBuilderに設定する
         TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
         TargetPlatform.linux: FadeUpwardsPageTransitionsBuilder(),
         TargetPlatform.macOS: CupertinoPageTransitionsBuilder(),
