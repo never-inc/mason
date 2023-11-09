@@ -1,0 +1,82 @@
+name: {{project_name.snakeCase()}}
+description: A new Flutter project.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+  # Logger
+  simple_logger:
+
+  # LocalDatabase
+  shared_preferences:
+
+  # Dialog
+  adaptive_dialog:
+
+  # Access local storage
+  path_provider:
+
+  # Date
+  intl:
+
+  # Riverpod
+  hooks_riverpod:
+  riverpod_annotation:
+
+  # Hooks
+  flutter_hooks:
+
+  # PullToRefresh
+  pull_to_refresh_flutter3:
+
+  # Entity
+  freezed_annotation:
+
+  # Launcher
+  url_launcher:
+
+  # Image
+  image_picker:
+  image_gallery_saver:
+  extended_image:
+
+  # Permission
+  permission_handler:
+
+  # Share
+  share_plus:
+
+  # Info
+  package_info_plus:
+  device_info_plus:
+
+  # Text
+  flutter_linkify:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Static analysis
+  pedantic_mono:
+  custom_lint:
+  riverpod_lint:
+
+  # Serializer
+  json_serializable:
+
+  # Code generator
+  build_runner:
+  freezed:
+  riverpod_generator:
+
+flutter:
+  uses-material-design: true
