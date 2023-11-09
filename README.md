@@ -12,14 +12,14 @@ mason new [feature name]
 
 ```yaml
 bricks:
-  feature:
-    git:
-      url: https://github.com/never-inc/mason.git
-      path: bricks/feature
   project_template:
     git:
       url: https://github.com/never-inc/mason.git
       path: bricks/project_template
+  feature:
+    git:
+      url: https://github.com/never-inc/mason.git
+      path: bricks/feature
 ```
 
 bricksに設定されている情報を取り込む
