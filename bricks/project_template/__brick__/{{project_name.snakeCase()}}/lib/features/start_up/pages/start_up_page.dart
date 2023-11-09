@@ -9,9 +9,14 @@ class StartUpPage extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
-      body: Text(
-        'StartUp',
-        style: context.bodyStyle,
+      appBar: AppBar(
+        title: const Text('Title'),
+      ),
+      body: Center(
+        child: Text(
+          'Hello World',
+          style: context.bodyStyle,
+        ),
       ),
     );
   }
