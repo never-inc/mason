@@ -33,3 +33,9 @@ brickを指定してコードを生成する
 ```sh
 mason make [feature name] # mason make project_template
 ```
+
+既に取り込んだbrickが更新された場合、アップグレードして取り込む
+
+```sh
+mason upgrade
+```
