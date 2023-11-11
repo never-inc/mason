@@ -16,16 +16,16 @@ Future<void> main() async {
   Logger.configure();
 
   await (
-  SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,
-    DeviceOrientation.portraitDown,
-  ]),
-  Future(() async {
-    packageInfo = await PackageInfo.fromPlatform();
-  }),
-  Future(() async {
-    sharedPreferences = await SharedPreferences.getInstance();
-  }),
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]),
+    Future(() async {
+      packageInfo = await PackageInfo.fromPlatform();
+    }),
+    Future(() async {
+      sharedPreferences = await SharedPreferences.getInstance();
+    }),
   ).wait;
 
   runApp(

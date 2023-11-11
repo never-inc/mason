@@ -37,27 +37,23 @@ extension ContextExtension on BuildContext {
   }
 
   void showSnackBar(
-      String text, {
-        Color? backgroundColor,
-        Duration duration = const Duration(milliseconds: 1500),
-        VoidCallback? onTap,
-        String closeLabel = '閉じる',
-      }) {
+    String text, {
+    Color? backgroundColor,
+    Duration duration = const Duration(milliseconds: 1500),
+    VoidCallback? onTap,
+    String closeLabel = '閉じる',
+  }) {
     ScaffoldMessenger.of(this).showSnackBar(
       SnackBar(
         backgroundColor: backgroundColor,
         content: Text(
           text,
-          style: bodyStyle.copyWith(color: Colors.white),
         ),
         duration: duration,
         action: SnackBarAction(
           label: closeLabel,
-          textColor: Colors.white,
           onPressed: () {
-            if (onTap != null) {
-              onTap();
-            }
+            onTap?.call();
           },
         ),
       ),
