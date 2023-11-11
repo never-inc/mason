@@ -62,6 +62,10 @@ dependencies:
   # Text
   flutter_linkify:
 
+  # Review
+  launch_review:
+  in_app_review:
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
