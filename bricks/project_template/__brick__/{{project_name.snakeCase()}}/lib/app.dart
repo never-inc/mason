@@ -3,7 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'core/res/theme.dart';
-import 'core/utils/navigator_key_provider.dart';
+import 'core/utils/navigator_key.dart';
 import 'core/widgets/have_scroll_bar_behavior.dart';
 import 'features/start_up/pages/start_up_page.dart';
 
